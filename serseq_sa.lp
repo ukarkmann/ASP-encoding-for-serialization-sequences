@@ -27,7 +27,6 @@
 % in/2        argument of solution candidate
 % index/1     index of sequence term
 % non_empty/1 non-empty term
-% non_terminate non-terminating reduct
 % reduct/2    argument of reduct 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

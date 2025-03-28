@@ -47,7 +47,6 @@
 % non_empty/1 non-empty sequence term
 % nsucc/3     non-successor relation over arguments of sequence term
 % reduct/2    argument of reduct
-% reduct/3    numbered argument of reduct 
 % sub/3       argument of decremented term
 % sub/4       argument of subset of sequence term
 % sub_attacked/4 argument attacked by subset of sequence term

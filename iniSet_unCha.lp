@@ -18,7 +18,7 @@
 %		1.4.2	Define subsubsets by removing non-defended arguments
 %		1.4.3	Flag non-admissible subsets
 %		=> Non-flagged subsets are admissible
-%		1.4.4 	Exclude solution candidate with admissible subset
+%		1.4.4 	Exclude solution candidates with admissible subset
 %
 %	=> Remaining sets are initial sets
 %
@@ -38,40 +38,43 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% List of used predicates
+% List of predicates
 %
-% a_attacked/1 attacked argument
+% a_attacked/2 attacked argument
 % a_card/1    cardinality of set of arguments 
 % a_elem/2    element of subset of arguments
-% a_flag/1    flag non-initials subsets
+% a_flag/1    flag non-initial subsets
 % a_lt/2      lower-than relation over arguments
 % a_nsucc/2   non-successor relation over arguments
 % a_ninf/1    non-smallest arguments
 % a_set/1     number of subset
 % a_sub/2     subsets of arguments
+% a_succ/2    non-successor relation over arguments
 % a_vec/4     binary vector
 % arg/1       arguments of AF
 % arg/2	      numbered argument of AF
 % att/2       attack-relation
 % attacked/1  attacked argument of solution candidate
 % card/1      cardinality of solution candidate
-% elemIni     element of initial set
+% elemIni/2   element of initial set
 % excl/2      argument excluded from solution candidate
 % in/1	      argument of solution candidate
 % in_attacked attacked solution candidate
 % iniSet/1    initial set
 % lt/2        lower-than relation over arguments of solution candidate
 % ninf/1      non-smallest arguments of solution candidate
-% nonAdm/1    indicates non-admissibility of subset
+% non_adm/2   indicates non-admissibility of subset
+% non_def/3   non-defended argument of subset of solution candidate
 % non_empty   non-empty solution candidate
 % nsucc/2     non-successor relation over arguments of solution candidate
 % sub/2       argument of decremented solution candidate
-% sub_attacked/2 argument attacked by subset
-% succ/2      successor-relation over arguments of set
+% sub/3       argument of descending subsets
+% sub_attacked/3 argument attacked by subset
+% succ/2      successor-relation over arguments of solution candidate
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% 	0.	Generate sets of arguments as candidates for initial set
+% 	0.	Generate sets of arguments as solution candidates
 
 	{ in(X) } 		:- 	arg(X).
 

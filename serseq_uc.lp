@@ -46,31 +46,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% List of used predicates
+% List of predicates
 %
 % arg/1       arguments of AF
 % att/2       attack-relation
 % att/3       attack-relation within reduct
 % attacked/2  argument attacked by sequence term
-% attacked/3  argument attacked by subset of sequence term
 % binVec/4    binary vector
 % card/1      cardinality of set of all arguments
-% card/2      cardinality of sequence term
 % collect/2   argument outside reduct
 % elem/2      relation of subsets and contained arguments
-% elem/3      relation of subsets of sequence terms and contained arguments
 % elemIni/3   argument of initial set
 % excl/3      argument excluded from set
 % flag/2      flagged subsets of reduct
 % in/2        argument of sequence term
-% in/3        numbered argument of sequence term 
 % index/1.    index of sequence term
 % iniSet/2    initial set
 % in_card/2   cardinality of sequence term
 % in_index/2  index of elements of sequence term
 % lt/3        lower-than relation over arguments of sequence term
 % ninf/2      non-smallest arguments of sequence term
-% non_adm/2   indicates non-admissiblity of subset of sequence term
+% non_adm/3   indicates non-admissiblity of subset of sequence term
 % non_def/4   mom-defended arguments of subset
 % non_empty/1 non-emptiness of sequence term
 % non_terminate/1 indicates non-terminating reducts
@@ -92,9 +88,8 @@
 % sub/2       relation of subsets to contained subsets
 % sub/3       argument of decremented set
 % sub/4       argument of subsubset
-% sub_attacked/2 argument attacked by subset of sequence term
+% sub_attacked/4 argument attacked by subset of sequence term
 % succ/3      successor-relation over arguments of sequence term
-% terminate/1 indicates termination condition
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

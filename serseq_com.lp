@@ -7,11 +7,11 @@
 % 0.	Generate sequences of sets of arguments as solution candidates
 %	for serialization sequences.
 %
-% 1. 	Each sequence terme must be an initial set
+% 1. 	Each sequence term must be an initial set
 %
 %	1.1	Exclude sequences with non-initial terms 
 %
-%		1.1.1	Exclude sequences with 'intermediate' empty term,
+%		1.1.1	Exclude sequences with 'intermediate' empty term
 %		1.1.2	Exclude sequences with conflicting term
 %		1.1.3	Exclude sequences with non-admissible term
 %			=> Remaining sequences only have non-empty admissible
@@ -55,7 +55,6 @@
 % non_terminate/1 reduct with unattacked arguments
 % nsucc/3     non-successor relation over arguments of sequence term
 % reduct/2    argument of reduct
-% reduct/3    numbered argument of reduct 
 % sub/3       argument of decremented term
 % sub/4       argument of subset of sequence term
 % sub_attacked/4 argument attacked by subset of sequence term

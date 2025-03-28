@@ -36,7 +36,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% List of used predicates
+% List of predicates
 %
 % arg/1       arguments of AF
 % att/2       attack-relation
@@ -62,12 +62,10 @@
 % r_card/2    cardinality of reduct
 % r_elem/2    element of subset of reduct
 % r_elem/3    element of subset of reduct 
-% r_excl/3    argument excluded from reduc
 % r_lt/3      Lower-than relation over arguments of reduct
 % r_ninf/2    non-smallest arguments of reduct 
 % r_nsucc/3   non-successor relation over arguments of reduct
 % r_set/2     numbered subset of reduct
-% r_sub/3     argument of decremented reduct
 % r_succ/3    successor-relation over arguments of reduct
 % reduct/2    argument of reduct
 % reduct/3    numbered argument of reduct 
