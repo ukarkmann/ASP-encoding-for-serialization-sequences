@@ -8,19 +8,19 @@
 %
 % 1. 	Exclude non-initial solution candidates 
 %
-%		1.1	Exclude empty set
-%		1.2	Exclude conflicting sets
-%		1.3	Exclude non-admissible sets
-%			=> Remaining sets are non-empty admissible
-%		1.4	Exclude non-minimal admissible sets
-%			
-%			1.4.1	Define subsets decremented by one element
-%			1.4.2	Define subsubsets by removing all non-defended arguments
-%			1.4.3	Flag non-admissible subsets
-%			=> Non-flagged subsets are admissible
-%			1.4.4 	Exclude solution candidate with admissible subset
+%	1.1	Exclude empty set
+%	1.2	Exclude conflicting sets
+%	1.3	Exclude non-admissible sets
+%		=> Remaining sets are non-empty admissible
+%	1.4	Exclude non-minimal admissible sets
+%		
+%		1.4.1	Define subsets decremented by one element
+%		1.4.2	Define subsubsets by removing all non-defended arguments
+%		1.4.3	Flag non-admissible subsets
+%		=> Non-flagged subsets are admissible
+%		1.4.4 	Exclude solution candidates with admissible subset
 %
-%		=> Remaining sets are initial sets
+%	=> Remaining sets are initial sets
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,9 +34,9 @@
 % in/1	      argument of solution candidate
 % lt/2        lower-than relation over arguments of solution candidate
 % ninf/1      non-smallest arguments of solution candidate
+% non_adm/2   indicates non-admissibility of subset
 % non_def/3   non-defended argument of subset of solution candidate
 % non_empty   indicates non-emptyness of solution candidate
-% non_adm/2   indicates non-admissibility of subset
 % nsucc/2     non-successor relation over arguments of solution candidate
 % sub/2       argument of decremented set
 % sub/3       argument of descending subsets
@@ -45,7 +45,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% 	0.	Generate sets of arguments as candidates for initial set
+% 	0.	Generate sets of arguments as candidates for initial sets
 
 	{ in(X) } 		:- 	arg(X).
 
